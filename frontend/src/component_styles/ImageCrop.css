@@ -1,0 +1,46 @@
+.useless-container{
+    display: none;
+}
+
+.useless-containertrue{
+    display: block;
+}
+
+.overall-container {
+    /* display: flex; */
+}
+
+.content-container {
+    display: flex;
+    margin-top: 200px;
+}
+
+.header-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 900px;
+    max-height: 700px;
+    margin-bottom: 150px;
+}
+
+.header-container h1 {
+    font-family: 'Helvetica Neue';
+}
+
+.header-container h2  {
+    margin-top: -0.2px;
+    font-family: 'Helvetica Neue';
+}
+
+.canvas-container {
+    position: fixed;
+    transform: scale(0);
+}

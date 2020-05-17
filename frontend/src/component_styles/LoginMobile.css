@@ -1,0 +1,52 @@
+.LoginMobile {
+    display: flex;
+    justify-content: center;
+}
+
+.login-mobile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	overflow: hidden;
+	width: 450px;
+    min-height: 450px;
+    margin-top: 7vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-mobile-container input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+    width: 75%;
+}
+
+.login-mobile-container button {
+	border-radius: 20px;
+	border: 1px solid #282c34;
+	background-color: #282c34;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 9px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+@media (max-width: 430px) {
+    .login-mobile-container {
+        width: 300px;
+    }
+
+    .login-mobile-container button {
+        font-size: 10px;
+        padding: 8px 35px;     
+    }
+}
