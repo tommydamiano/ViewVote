@@ -3,7 +3,7 @@ from mySQL_classes import Video
 from get_pics import get_video_pics
 # https://www.youtube.com/playlist?list=PL8A83124F1D79BD4F
 
-api_key = "AIzaSyDH3zQeAhYY-vraSjTNLtFmt03Vw4hXnDE"
+api_key = "-vraSjsdTNLtFmt03Vw4hXnDE"
 youtube = build("youtube", "v3", developerKey= api_key)
 
 # api_search = "AIzaSyC8WJDbuDjAzv8wBwHQyI_vob8Nh6s_HTg"
@@ -22,7 +22,7 @@ def get_playlist_videos(playlist_id):
 
 
 if __name__ == '__main__':
-    videos = get_playlist_videos('PL3KSpSIN4bb-g9DHBp7x2cHW_Sjt-EZhu')
+    videos = get_playlist_videos('PL3KSpSIN4bbsd-g9DHBp7x2cHW_Sjt-EZhu')
     for video in videos:
         request = youtube.videos().list(id= video['snippet']['resourceId']['videoId'], part= 'statistics').execute()
         title = video['snippet']['title']
