@@ -2,8 +2,8 @@ import firebase from 'firebase/app';
 import 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDOAEjejUZ5NN9KxRwtAa__y6EWITTG-sI",
-    authDomain: "viewvote-6f094.firebaseapp.com",
+    apiKey: "-sI",
+    authDomain: "-6f094..com",
     databaseURL: "https://viewvote-6f094.firebaseio.com",
     projectId: "viewvote-6f094",
     storageBucket: "viewvote-6f094.appspot.com",
