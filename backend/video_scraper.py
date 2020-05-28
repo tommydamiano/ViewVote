@@ -6,10 +6,10 @@ from mySQL_classes import Video
 from get_pics import get_video_pics
 from youtube_playlists import get_playlist_videos
 
-api_key = "AIzaSyCwqHjKdIq1ubrBr8Kv3XAOshyaePaZrWM"
+api_key = "AIzaSyCwqHjKdIq1ubrBr8Kv3sdXAOshyaePaZrWM"
 youtube = build("youtube", "v3", developerKey= api_key)
 
-videos = get_playlist_videos('PLH0OZUK8fu2ZzrCTGtC6R0upE3Di9h7bc')
+videos = get_playlist_videos('PLH0OZUK8fu2sdZzrCTGtC6R0upE3Di9h7bc')
 
 for video in videos:
     request = youtube.videos().list(id= video['snippet']['resourceId']['videoId'], part= 'statistics').execute()
