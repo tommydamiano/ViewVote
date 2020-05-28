@@ -1,0 +1,143 @@
+.Homepage h1 {
+    padding-top: 17vh;
+    text-align: center;
+}
+
+.View {
+    color: rgb(42, 173, 99);
+    font-size: 8.75rem;
+    font-family: 'Helvetica Neue';
+}
+
+.Vote {
+    color: #d63031;
+    font-size: 8.75rem;
+    font-family: 'Helvetica Neue';
+}
+
+.logo {
+    width: 50px;
+    animation:spin 4s linear infinite;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.mainButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    margin: 0 20px;
+    height: 35px;
+    width: 170px;
+    border: solid 1px #282c34;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #282c34;
+    color: white;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+}
+
+.start:hover {
+    background-color: #474f52;
+    border: solid 1px #474f52;
+}
+
+
+.leaderboard {
+    margin: 0 20px;
+    height: 35px;
+    width: 170px;
+    border: solid 1px #282c34;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #282c34;
+    color: white;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+}
+
+.leaderboard:hover {
+    background-color: #474f52;
+    border: solid 1px #474f52;
+}
+
+.Homepage p {
+    text-align: center;
+    color: #d63031;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.description-section {
+    background-color: #282c34;
+    min-height: 100vh;
+    font-size: 0;
+}
+
+@media (max-width: 1050px) {
+    .View, .Vote {
+        font-size: 9rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .start {
+        width: 150px;
+    }
+
+    .leaderboard {
+        width: 150px;
+    }
+    
+    .View, .Vote {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .mainButtons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .start {
+        font-size: 0.7rem;
+    }
+
+    .leaderboard {
+        margin-top: 35px;
+        font-size: 0.7rem;
+    }
+    
+    .View, .Vote {
+        font-size: 7rem;
+    }
+    
+    .logo {
+        width: 40px;
+    }
+}
+
+@media (max-width: 530px) {
+    .logo {
+        width: 0;
+    }
+}
+
+@media (max-height: 750px) {
+    .Homepage h1 {
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
