@@ -4,7 +4,7 @@ import pyautogui
 from time import sleep
 
 def get_video_pics(title):
-    driver = webdriver.Chrome(executable_path='/Users/thomasdamiano/Driver/chromedriver')
+    driver = webdriver.Chrome(executable_path='/Users/Driver/chromedriver')
     screenWidth, screenHeight = pyautogui.size()
     currentMouseX, currentMouseY = pyautogui.position()
     driver.get("https://www.google.com/imghp?hl=en")
